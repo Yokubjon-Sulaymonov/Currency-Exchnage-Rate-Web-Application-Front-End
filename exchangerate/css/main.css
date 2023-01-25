@@ -1,0 +1,9 @@
+@import "main/nav/navigation.css";
+@import "currinfo/currencyInfo.css";
+@import "main/fastconverter/fastConverter.css";
+@import "main/shortinfo/shortInfo.css";
+@import "main/popconversion/popularConversions.css";
+@import "main/converter/converter.css";
+@import "main/footer/footer.css";
+@import "main/heading/heading.css";
+@import "main/chart/lineGraph.css";

@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Currex</title>
+    <link rel="icon" href = "../../../webappimages/currex-logo-big.png" type="image/icon type">
+    <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "../../../css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class = "nav">
+    <div>
+        <div class = "inline">
+            <a href="#"><img src="../../../webappimages/currex-logo-small.JPG" alt="logo"/></a>
+        </div>
+        <button class = "help inline" onclick="openHelpMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                 class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0
+                     .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965
+                     1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0
+                     .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056
+                     0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0
+                     .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584
+                     0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+            </svg>
+            Pomóc
+        </button>
+        <button class = "language inline" onclick="openLanguageMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+                 viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0
+                     5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0
+                     2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847
+                     5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51
+                     8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145
+                     12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696
+                     0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652
+                     13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745
+                     12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82
+                     1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65
+                     13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312
+                     2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0
+                     0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897
+                     9.17 1.282 8.5 1.077V4h2.355z"/>
+            </svg>
+            PL
+        </button>
+    </div>
+</div>
+<div id = "menu-for-help" class = "hidden-menu">
+    <div class = "support">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+             viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0
+                4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0
+                1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+        </svg>
+        <span class = "underline">
+            <a href="#footer">Kontakt</a>
+        </span>
+    </div>
+    <div class = "faq">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle"
+             viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686
+                0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0
+                .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056
+                0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0
+                1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+        </svg>
+        <span class = "underline">
+            <a href="faq/FAQ.html">FAQ</a>
+        </span>
+    </div>
+</div>
+<div id = "menu-for-language" class = "hidden-menu">
+    <div class = "support">
+        <img src="../../../webappimages/GBP-flag.png" alt="">
+        <span class = "underline">
+            <a href="../../main.html">Angielski</a>
+        </span>
+    </div>
+    <div class = "support">
+        <img src="../../../webappimages/PLN-flag.png" alt="">
+        <span class = "underline">
+            <a href="#">Polski</a>
+        </span>
+    </div>
+</div>
+<div class = "head-title">
+    <p>PRZELICZNIK WALUT CURREX</p>
+    <h1 id = "header-title">1 Dirham ZEA na Złotówka</h1>
+</div>
+<div class = "converter">
+    <div class = "selectors">
+        <div>
+            <select id = "input-drop-down">
+                <option value="AED">Dirham ZEA (Zjednoczone Emiraty Arabskie)</option>
+                <option value="AFN">Afgani (Afganistan)</option>
+                <option value="ALL">Lek (Albania)</option>
+                <option value="AMD">Dram (Armenia)</option>
+                <option value="ANG">Gulden Antyli Holenderskich</option>
+                <option value="AOA">Kwanza (Angola)</option>
+                <option value="ARS">Peso Argentyńskie</option>
+                <option value="AUD">Dolar Australijski</option>
+                <option value="AWG">Florin Arubański</option>
+                <option value="AZN">Manat Azerbejdżański</option>
+                <option value="BAM">Wymienialna Marka (Bośnia i Hercegowina)</option>
+                <option value="BBD">Dolar Barbadoski</option>
+                <option value="BDT">Taka (Bangladesz)</option>
+                <option value="BGN">lew (Bułgaria)</option>
+                <option value="BHD">Dinar Bahrajski</option>
+                <option value="BIF">Frank Burundyjski</option>
+                <option value="BND">Dolar Brunejski</option>
+                <option value="BOB">Boliwiano (Boliwia)</option>
+                <option value="BRZ">Real (Brazylia)</option>
+                <option value="BSD">Dolar Bahamski</option>
+                <option value="BYN">Rubel Białoruski</option>
+                <option value="BWP">Pula (Botswana)</option>
+                <option value="BZD">Dolar Belizeński</option>
+                <option value="CAD">Dolar Kanadyjski</option>
+                <option value="CDF">Frank kongijski (Dem. Republika Konga)</option>
+                <option value="CHF">Frank Szwajcarski</option>
+                <option value="CLP">Peso Chilijskie</option>
+                <option value="CNY">Yuan Renminbi (Chiny)</option>
+                <option value="COP">Peso Kolumbijskie</option>
+                <option value="CRC">Colon Kostarykański</option>
+                <option value="CUP">Peso Kubańskie</option>
+                <option value="CVE">Escudo Zielonego Przylądka</option>
+                <option value="CZK">Korona Czeska</option>
+                <option value="DJF">Frank Dżibuti</option>
+                <option value="DKK">Korona Duńska</option>
+                <option value="DOP">Peso Dominikańskie</option>
+                <option value="DZD">Dinar Algierski</option>
+                <option value="EGP">Funt Egipski</option>
+                <option value="ERN">Nakfa (Erytrea)</option>
+                <option value="ETB">Birr Etiopski</option>
+                <option value="EUR">Euro</option>
+                <option value="FJD">Dolar Fidżi</option>
+                <option value="GBP">Funt Szterling</option>
+                <option value="GEL">Lari (Gruzja)</option>
+                <option value="GHS">Ghana Cedi</option>
+                <option value="GIP">Funt Gibraltarski</option>
+                <option value="GMD">Dalasi (Gambia)</option>
+                <option value="GNF">Frank Gwinejski</option>
+                <option value="GTQ">Quetzal (Gwatemala)</option>
+                <option value="GYD">Dolar Gujański</option>
+                <option value="HKD">Dolar Hongkongu</option>
+                <option value="HNL">Lempira (Honduras)</option>
+                <option value="HRK">Kuna Chorwacka</option>
+                <option value="HTG">Gourde (Haiti)</option>
+                <option value="HUF">Forint (Węgry)</option>
+                <option value="IDR">Rupia Indonezyjska</option>
+                <option value="ILS">Nowy Izraelski Szekel</option>
+                <option value="INR">Rupia Indyjska</option>
+                <option value="IQD">Dinar Iracki</option>
+                <option value="IRR">Rial Irański</option>
+                <option value="ISK">Korona Islandzka</option>
+                <option value="JMD">Dolar Jamajski</option>
+                <option value="JOD">Dinar Jordański</option>
+                <option value="JPY">Jen (Japonia)</option>
+                <option value="KES">Szyling Kenijski</option>
+                <option value="KGS">Som (Kirgistan)</option>
+                <option value="KHR">Riel (Kambodża)</option>
+                <option value="KMF">Frank Komorów</option>
+                <option value="KRW">Won Południowokoreański</option>
+                <option value="KWD">Dinar Kuwejcki</option>
+                <option value="KZT">Tenge (Kazachstan)</option>
+                <option value="LAK">Kip (Laos)</option>
+                <option value="LBP">Funt Libański</option>
+                <option value="LKR">Rupia Lankijska</option>
+                <option value="LRD">Dolar Liberyjski</option>
+                <option value="LSL">Loti (Lesotho)</option>
+                <option value="LYD">Dinar Libijski</option>
+                <option value="MAD">Dirham Marokański</option>
+                <option value="MDL">Lej Mołdawii</option>
+                <option value="MGA">Ariary (Madagaskar)</option>
+                <option value="MKD">Denar (Macedonia Północna)</option>
+                <option value="MMK">Kyat (Myanmar, Birma)</option>
+                <option value="MRU">Ouguiya (Mauretania)</option>
+                <option value="MNT">Tugrik (Mongolia)</option>
+                <option value="MOP">Pataca (Makau)</option>
+                <option value="MUR">Rupia Mauritiusu</option>
+                <option value="MVR">Rupia (Malediwy)</option>
+                <option value="MWK">Kwacha</option>
+                <option value="MXN">Peso Meksykańskie</option>
+                <option value="MYR">Ringgit (Malezja)</option>
+                <option value="MZN">Metical (Mozambik)</option>
+                <option value="NAD">Dolar Namibijski</option>
+                <option value="NGN">Naira (Nigeria)</option>
+                <option value="NIO">Cordoba Oro (Nikaragua)</option>
+                <option value="NOK">Korona Norweska</option>
+                <option value="NPR">Rupia Nepalska</option>
+                <option value="NZD">Dolar Nowozelandzki</option>
+                <option value="OMR">Rial Omański</option>
+                <option value="PAB">Balboa (Panama)</option>
+                <option value="PEN">Sol (Peru)</option>
+                <option value="PGK">Kina (Papua-Nowa Gwinea)</option>
+                <option value="PHP">Peso Filipińskie</option>
+                <option value="PKR">Rupia Pakistańska</option>
+                <option value="PLN">Polski Złoty</option>
+                <option value="PYG">Guarani (Paragwaj)</option>
+                <option value="QAR">Rial Katarski</option>
+                <option value="RON">Lej Rumuński</option>
+                <option value="RSD">Dinar Serbski</option>
+                <option value="RUB">Rubel Rosyjski</option>
+                <option value="RWF">Frank Rwandyjski</option>
+                <option value="SAR">Rial Saudyjski</option>
+                <option value="SBD">Dolar Wysp Salomona</option>
+                <option value="SCR">Rupia Seszelska</option>
+                <option value="SDG">Funt Sudański</option>
+                <option value="SEK">Korona Szwedzka</option>
+                <option value="SGD">Dolar Singapurski</option>
+                <option value="SLE">Leone (Sierra Leone)</option>
+                <option value="SOS">Szyling Somalijski</option>
+                <option value="SRD">Dolar Surinamski</option>
+                <option value="SSP">Funt Południowosudański</option>
+                <option value="STN">Dobra (Wyspy Świętego Tomasza i Książęca)</option>
+                <option value="SVC">Colon Salwadorski</option>
+                <option value="SYP">Funt Syryjski</option>
+                <option value="SZL">Lilangeni (Eswatini)</option>
+                <option value="THB">bat (Tajlandia)</option>
+                <option value="TJS">Somoni (Tadżykistan)</option>
+                <option value="TMT">Nowy Manat (Turkmenistan)</option>
+                <option value="TND">Dinar Tunezyjski</option>
+                <option value="TOP">Pa'anga (Tonga)</option>
+                <option value="TRY">Lira Turecka</option>
+                <option value="TTD">Dolar Trynidadu i Tobago</option>
+                <option value="TZS">Szyling Tanzański</option>
+                <option value="TWD">Nowy Dolar Tajwański</option>
+                <option value="UAH">Hrywna (Ukraina)</option>
+                <option value="UGX">Szyling Ugandyjski</option>
+                <option value="USD">Dolar amerykański</option>
+                <option value="UYU">Peso Urugwajskie</option>
+                <option value="UZS">Sum (Uzbekistan)</option>
+                <option value="VES">Boliwar Soberano (Wenezuela)</option>
+                <option value="VND">Dong (Wietnam)</option>
+                <option value="VUV">Vatu (Vanuatu)</option>
+                <option value="WST">Tala (Samoa)</option>
+                <option value="XAF">Frank CFA BEAC</option>
+                <option value="XCD">Dolar Wschodniokaraibski</option>
+                <option value="XDR">SDR (MFW)</option>
+                <option value="XOF">Frank CFA BCEAO</option>
+                <option value="CPF">Frank CFP</option>
+                <option value="YER">Rial Jemeński</option>
+                <option value="ZAR">Rand (Republika Południowej Afryki)</option>
+                <option value="ZMW">Kwacha Zambijska</option>
+                <option value="ZWL">Dolar Zimbabwe</option>
+            </select>
+        </div>
+        <div>
+            <select id = "output-drop-down">
+                <option value="AED">Dirham ZEA (Zjednoczone Emiraty Arabskie)</option>
+                <option value="AFN">Afgani (Afganistan)</option>
+                <option value="ALL">Lek (Albania)</option>
+                <option value="AMD">Dram (Armenia)</option>
+                <option value="ANG">Gulden Antyli Holenderskich</option>
+                <option value="AOA">Kwanza (Angola)</option>
+                <option value="ARS">Peso Argentyńskie</option>
+                <option value="AUD">Dolar Australijski</option>
+                <option value="AWG">Florin Arubański</option>
+                <option value="AZN">Manat Azerbejdżański</option>
+                <option value="BAM">Wymienialna Marka (Bośnia i Hercegowina)</option>
+                <option value="BBD">Dolar Barbadoski</option>
+                <option value="BDT">Taka (Bangladesz)</option>
+                <option value="BGN">lew (Bułgaria)</option>
+                <option value="BHD">Dinar Bahrajski</option>
+                <option value="BIF">Frank Burundyjski</option>
+                <option value="BND">Dolar Brunejski</option>
+                <option value="BOB">Boliwiano (Boliwia)</option>
+                <option value="BRZ">Real (Brazylia)</option>
+                <option value="BSD">Dolar Bahamski</option>
+                <option value="BYN">Rubel Białoruski</option>
+                <option value="BWP">Pula (Botswana)</option>
+                <option value="BZD">Dolar Belizeński</option>
+                <option value="CAD">Dolar Kanadyjski</option>
+                <option value="CDF">Frank kongijski (Dem. Republika Konga)</option>
+                <option value="CHF">Frank Szwajcarski</option>
+                <option value="CLP">Peso Chilijskie</option>
+                <option value="CNY">Yuan Renminbi (Chiny)</option>
+                <option value="COP">Peso Kolumbijskie</option>
+                <option value="CRC">Colon Kostarykański</option>
+                <option value="CUP">Peso Kubańskie</option>
+                <option value="CVE">Escudo Zielonego Przylądka</option>
+                <option value="CZK">Korona Czeska</option>
+                <option value="DJF">Frank Dżibuti</option>
+                <option value="DKK">Korona Duńska</option>
+                <option value="DOP">Peso Dominikańskie</option>
+                <option value="DZD">Dinar Algierski</option>
+                <option value="EGP">Funt Egipski</option>
+                <option value="ERN">Nakfa (Erytrea)</option>
+                <option value="ETB">Birr Etiopski</option>
+                <option value="EUR">Euro</option>
+                <option value="FJD">Dolar Fidżi</option>
+                <option value="GBP">Funt Szterling</option>
+                <option value="GEL">Lari (Gruzja)</option>
+                <option value="GHS">Ghana Cedi</option>
+                <option value="GIP">Funt Gibraltarski</option>
+                <option value="GMD">Dalasi (Gambia)</option>
+                <option value="GNF">Frank Gwinejski</option>
+                <option value="GTQ">Quetzal (Gwatemala)</option>
+                <option value="GYD">Dolar Gujański</option>
+                <option value="HKD">Dolar Hongkongu</option>
+                <option value="HNL">Lempira (Honduras)</option>
+                <option value="HRK">Kuna Chorwacka</option>
+                <option value="HTG">Gourde (Haiti)</option>
+                <option value="HUF">Forint (Węgry)</option>
+                <option value="IDR">Rupia Indonezyjska</option>
+                <option value="ILS">Nowy Izraelski Szekel</option>
+                <option value="INR">Rupia Indyjska</option>
+                <option value="IQD">Dinar Iracki</option>
+                <option value="IRR">Rial Irański</option>
+                <option value="ISK">Korona Islandzka</option>
+                <option value="JMD">Dolar Jamajski</option>
+                <option value="JOD">Dinar Jordański</option>
+                <option value="JPY">Jen (Japonia)</option>
+                <option value="KES">Szyling Kenijski</option>
+                <option value="KGS">Som (Kirgistan)</option>
+                <option value="KHR">Riel (Kambodża)</option>
+                <option value="KMF">Frank Komorów</option>
+                <option value="KRW">Won Południowokoreański</option>
+                <option value="KWD">Dinar Kuwejcki</option>
+                <option value="KZT">Tenge (Kazachstan)</option>
+                <option value="LAK">Kip (Laos)</option>
+                <option value="LBP">Funt Libański</option>
+                <option value="LKR">Rupia Lankijska</option>
+                <option value="LRD">Dolar Liberyjski</option>
+                <option value="LSL">Loti (Lesotho)</option>
+                <option value="LYD">Dinar Libijski</option>
+                <option value="MAD">Dirham Marokański</option>
+                <option value="MDL">Lej Mołdawii</option>
+                <option value="MGA">Ariary (Madagaskar)</option>
+                <option value="MKD">Denar (Macedonia Północna)</option>
+                <option value="MMK">Kyat (Myanmar, Birma)</option>
+                <option value="MRU">Ouguiya (Mauretania)</option>
+                <option value="MNT">Tugrik (Mongolia)</option>
+                <option value="MOP">Pataca (Makau)</option>
+                <option value="MUR">Rupia Mauritiusu</option>
+                <option value="MVR">Rupia (Malediwy)</option>
+                <option value="MWK">Kwacha</option>
+                <option value="MXN">Peso Meksykańskie</option>
+                <option value="MYR">Ringgit (Malezja)</option>
+                <option value="MZN">Metical (Mozambik)</option>
+                <option value="NAD">Dolar Namibijski</option>
+                <option value="NGN">Naira (Nigeria)</option>
+                <option value="NIO">Cordoba Oro (Nikaragua)</option>
+                <option value="NOK">Korona Norweska</option>
+                <option value="NPR">Rupia Nepalska</option>
+                <option value="NZD">Dolar Nowozelandzki</option>
+                <option value="OMR">Rial Omański</option>
+                <option value="PAB">Balboa (Panama)</option>
+                <option value="PEN">Sol (Peru)</option>
+                <option value="PGK">Kina (Papua-Nowa Gwinea)</option>
+                <option value="PHP">Peso Filipińskie</option>
+                <option value="PKR">Rupia Pakistańska</option>
+                <option value="PLN">Polski Złoty</option>
+                <option value="PYG">Guarani (Paragwaj)</option>
+                <option value="QAR">Rial Katarski</option>
+                <option value="RON">Lej Rumuński</option>
+                <option value="RSD">Dinar Serbski</option>
+                <option value="RUB">Rubel Rosyjski</option>
+                <option value="RWF">Frank Rwandyjski</option>
+                <option value="SAR">Rial Saudyjski</option>
+                <option value="SBD">Dolar Wysp Salomona</option>
+                <option value="SCR">Rupia Seszelska</option>
+                <option value="SDG">Funt Sudański</option>
+                <option value="SEK">Korona Szwedzka</option>
+                <option value="SGD">Dolar Singapurski</option>
+                <option value="SLE">Leone (Sierra Leone)</option>
+                <option value="SOS">Szyling Somalijski</option>
+                <option value="SRD">Dolar Surinamski</option>
+                <option value="SSP">Funt Południowosudański</option>
+                <option value="STN">Dobra (Wyspy Świętego Tomasza i Książęca)</option>
+                <option value="SVC">Colon Salwadorski</option>
+                <option value="SYP">Funt Syryjski</option>
+                <option value="SZL">Lilangeni (Eswatini)</option>
+                <option value="THB">bat (Tajlandia)</option>
+                <option value="TJS">Somoni (Tadżykistan)</option>
+                <option value="TMT">Nowy Manat (Turkmenistan)</option>
+                <option value="TND">Dinar Tunezyjski</option>
+                <option value="TOP">Pa'anga (Tonga)</option>
+                <option value="TRY">Lira Turecka</option>
+                <option value="TTD">Dolar Trynidadu i Tobago</option>
+                <option value="TZS">Szyling Tanzański</option>
+                <option value="TWD">Nowy Dolar Tajwański</option>
+                <option value="UAH">Hrywna (Ukraina)</option>
+                <option value="UGX">Szyling Ugandyjski</option>
+                <option value="USD">Dolar Amerykański</option>
+                <option value="UYU">Peso Urugwajskie</option>
+                <option value="UZS">Sum (Uzbekistan)</option>
+                <option value="VES">Boliwar Soberano (Wenezuela)</option>
+                <option value="VND">Dong (Wietnam)</option>
+                <option value="VUV">Vatu (Vanuatu)</option>
+                <option value="WST">Tala (Samoa)</option>
+                <option value="XAF">Frank CFA BEAC</option>
+                <option value="XCD">Dolar Wschodniokaraibski</option>
+                <option value="XDR">SDR (MFW)</option>
+                <option value="XOF">Frank CFA BCEAO</option>
+                <option value="CPF">Frank CFP</option>
+                <option value="YER">Rial Jemeński</option>
+                <option value="ZAR">Rand (Republika Południowej Afryki)</option>
+                <option value="ZMW">Kwacha Zambijska</option>
+                <option value="ZWL">Dolar Zimbabwe</option>
+            </select>
+        </div>
+    </div>
+    <div class = "input">
+        <div>
+            <form>
+                <input id = "input" name = "input" type="number" step=any/>
+            </form>
+        </div>
+        <div>
+            <form>
+                <input id = "output" name = "output" type="number" step=any/>
+            </form>
+        </div>
+    </div>
+    <div class = "date">
+        <div>
+            <h3>Data</h3>
+            <form>
+                <input id = "date" name = "date-for-convert" type="date">
+            </form>
+        </div>
+        <div class = "convert-button" onclick="convert()">
+            <button onclick="" type="button">Konwertować</button>
+        </div>
+        <div class = "replace-button" onclick="replace()">
+            <button type="button">
+                <a href="#"><img src="../../../webappimages/left-right-icon.jpg" alt=""></a>
+            </button>
+        </div>
+    </div>
+    <p>
+        Narzędzia kalkulatora waluty Currex wykorzystują Currex Rates™, probierzowe kursy wymiany opracowane na
+        podstawie wiodących dostarczycieli danych rynkowych.
+    </p>
+</div>
+<div id = "fast-converter">
+    <div class = "fast-exchange">
+        <h2>Przelicz EUR na Złote</h2>
+        <ul>
+            <li><img src="../../../webappimages/EUR_flag.png" alt="EUR">EUR</li>
+            <li><img src="../../../webappimages/PLN-flag.png" alt="PLN">PLN</li>
+        </ul>
+        <hr />
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>1 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR1">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>5 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR5">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>10 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR10">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>25 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR25">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>50 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR50">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>100 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR100">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>500 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR500">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>1.000 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR1000">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>5.000 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR5000">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>10.000 EUR</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                             .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "EUR10000">0.000000 PLN</li>
+        </ul>
+    </div>
+    <div class = "fast-exchange less-left-margin">
+        <h2>Przelicz USD na Zloty</h2>
+        <ul>
+            <li><img src="../../../webappimages/USD-flag.jpg" alt="USD">EUR</li>
+            <li><img src="../../../webappimages/PLN-flag.png" alt="PLN">PLN</li>
+        </ul>
+        <hr />
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>1 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD1">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>5 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD5">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>10 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD10">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>25 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD25">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>50 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD50">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>100 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD100">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>500 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD500">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>1.000 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD1000">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>5.000 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                            .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD5000">0.000000 PLN</li>
+        </ul>
+        <ul>
+            <li>
+                <a href = "#fast-converter">
+                    <span>10.000 USD</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                             .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li id = "USD10000">0.000000 PLN</li>
+        </ul>
+    </div>
+</div>
+<div>
+    <div class = "short-info">
+        <h2>EUR-Euro</h2>
+        <p>Euro (EUR) jest oficjalną walutą 19 z 27 państw członkowskich Unii Europejskiej. Od pierwszego
+            kwartale 2021 r. Unia Europejska, zwana również strefą euro, składa się z 27 państw członkowskich.
+            Następujące krajów, które przyjęły euro: Austria, Belgia, Cypr, Estonia, Finlandia, Francja, Niemcy,
+            Grecja, Irlandia, Włochy, Łotwa, Litwa, Luksemburg, Malta, Holandia, Portugalia, Słowacja, Słowenia i
+            Hiszpania.</p>
+        <p><a href="currinfo/currencies/EUR.html">Więcej informacji o euro</a></p>
+    </div>
+    <div class = "short-info less-left-margin">
+        <h2>USD-US Dollar</h2>
+        <p>Dolar amerykański jest jedną z najczęściej używanych walut na całym świecie, zarówno jako oficjalny
+            waluty i dla handlu międzynarodowego poza granicami USA. Dolar dzieli się na 100 jednostek zwanych groszami
+            lub centów. Stany Zjednoczone Ameryki mają mieszaną gospodarkę kapitalistyczną, która jest napędzana
+            obfitością zasobów naturalnych zasoby, dobrze rozwiniętą infrastrukturę i wysoką produktywność.
+            <br /> <br />
+            <a href="currinfo/currencies/USD.html">Więcej informacji o US Dollar</a></p>
+    </div>
+</div>
+<div class = "popular-conversion">
+    <table>
+        <tr>
+            <th colspan="4">Popularne Konwersje</th>
+        </tr>
+        <tr>
+            <td id = "EUR-to-PLN" onclick="convertPopularConversions(`EUR`)"><a href = "#">1 EUR na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "USD-to-PLN" onclick="convertPopularConversions(`USD`)"><a href = "#">1 USD na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "CHF-to-PLN" onclick="convertPopularConversions(`CHF`)"><a href = "#">1 CHF na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "JPY-to-PLN" onclick="convertPopularConversions(`JPY`)"><a href = "#">1 JPY na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+        </tr>
+        <tr>
+            <td id = "GBP-to-PLN" onclick="convertPopularConversions(`GBP`)"><a href = "#">1 GBP na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "HKD-to-PLN" onclick="convertPopularConversions(`HKD`)"><a href = "#">1 HKD na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "AUD-to-PLN" onclick="convertPopularConversions(`AUD`)"><a href = "#">1 AUD na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "CAD-to-PLN" onclick="convertPopularConversions(`CAD`)"><a href = "#">1 CAD na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+        </tr>
+        <tr>
+            <td id = "NZD-to-PLN" onclick="convertPopularConversions(`NZD`)"><a href = "#">1 NZD na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "SEK-to-PLN" onclick="convertPopularConversions(`SEK`)"><a href = "#">1 SEK na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "MXN-to-PLN" onclick="convertPopularConversions(`MXN`)"><a href = "#">1 MXN na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "ZAR-to-PLN" onclick="convertPopularConversions(`ZAR`)"><a href = "#">1 ZAR na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+        </tr>
+        <tr>
+            <td id = "BRZ-to-PLN" onclick="convertPopularConversions(`BRZ`)"><a href = "#">1 BRZ na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "MYR-to-PLN" onclick="convertPopularConversions(`MYR`)"><a href = "#">1 MYR na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "SGD-to-PLN" onclick="convertPopularConversions(`SGD`)"><a href = "#">1 SGD na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+            <td id = "THB-to-PLN" onclick="convertPopularConversions(`THB`)"><a href = "#">1 THB na PLN
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0
+                          .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class = "currency-info">
+    <h2>Profile Walutowe</h2>
+    <ul>
+        <li><a href = "currinfo/currencies/AED.html">
+            <span class = "same-width">
+                <img src="../../../webappimages/AED-flag.jpg" alt = "AED"/>
+                <span class = "country-code">AED</span>
+            </span>
+            <span class = "country-currency">Dirham ZEA</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/AUD.html">
+            <span class = "same-width">
+                <img src="../../../webappimages/AUD-flag.webp" alt = "AUD"/>
+                <span class = "country-code">AUD</span>
+            </span>
+            <span class = "country-currency">Dolar Australijski</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/BRZ.html">
+            <span class = "same-width">
+                <img src="../../../webappimages/BRZ-flag.png" alt = "BRZ"/>
+                <span class = "country-code">BRZ</span>
+            </span>
+            <span class = "country-currency">Real Brazylijski</span></a>
+        </li>
+    </ul>
+    <ul>
+        <li><a href = "currinfo/currencies/CHF.html">
+            <span class="same-width">
+                <img src="../../../webappimages/CHF-flag.png" alt = "CHF"/>
+                <span class = "country-code">CHF</span>
+            </span>
+            <span class = "country-currency">Frank Szwajcarski</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/CNY.html">
+            <span class="same-width">
+                <img src="../../../webappimages/CNY-flag.jpg" alt = "CNY"/>
+                <span class = "country-code">CNY</span>
+            </span>
+            <span class = "country-currency">Yuan Renminbi Chinski</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/EUR.html">
+            <span class="same-width">
+                <img src="../../../webappimages/EUR_flag.png" alt = "EUR"/>
+                <span class = "country-code">EUR</span>
+            </span>
+            <span class = "country-currency">Euro</span></a>
+        </li>
+    </ul>
+    <ul>
+        <li><a href = "currinfo/currencies/GBP.html">
+            <span class="same-width">
+                <img src="../../../webappimages/GBP-flag.png" alt = "GBP"/>
+                <span class = "country-code">GBP</span>
+            </span>
+            <span class = "country-currency">Funt Szterling</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/HKD.html">
+            <span class="same-width">
+                <img src="../../../webappimages/HKD-flag.png" alt = "HKD"/>
+                <span class = "country-code">HKD</span>
+            </span>
+            <span class = "country-currency">Dolar Hongkongu</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/INR.html">
+            <span class="same-width">
+                <img src="../../../webappimages/INR-flag.jpg" alt = "INR"/>
+                <span class = "country-code">INR</span>
+            </span>
+            <span class = "country-currency">Rupia Indyjska</span></a>
+        </li>
+    </ul>
+    <ul>
+        <li><a href = "currinfo/currencies/JPY.html">
+            <span class="same-width">
+                <img src="../../../webappimages/JPY-flag.png" alt = "JPY"/>
+                <span class = "country-code">JPA</span>
+            </span>
+            <span class = "country-currency">Jen Japoński</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/MXN.html">
+            <span class="same-width">
+                <img src="../../../webappimages/MXN-flag.jpg" alt = "MXN"/>
+                <span class = "country-code">MXN</span>
+            </span>
+            <span class = "country-currency">Peso Meksykańskie</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/MYR.html">
+            <span class="same-width">
+                <img src="../../../webappimages/MYR-flag.png" alt = "MYR"/>
+                <span class = "country-code">MYR</span>
+            </span>
+            <span class = "country-currency">Ringgit Malezyjski</span></a>
+        </li>
+    </ul>
+    <ul>
+        <li><a href = "currinfo/currencies/PHP.html">
+            <span class="same-width">
+                <img src="../../../webappimages/PHP-flag.png" alt = "PHP"/>
+                <span class = "country-code">PHP</span>
+            </span>
+            <span class = "country-currency">Peso Filipińskie</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/SAR.html">
+            <span class="same-width">
+                <img src="../../../webappimages/SAR-flag.png" alt = "SAR"/>
+                <span class = "country-code">SAR</span>
+            </span>
+            <span class = "country-currency">Rial Saudyjski</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/SEK.html">
+            <span class="same-width">
+                <img src="../../../webappimages/SEK-flag.png" alt = "SEK"/>
+                <span class = "country-code">SEK</span>
+            </span>
+            <span class = "country-currency">Korona Szwedzka</span></a>
+        </li>
+    </ul>
+    <ul>
+        <li><a href = "currinfo/currencies/SGD.html">
+            <span class="same-width">
+                <img src="../../../webappimages/SGD-flag.png" alt = "SGD"/>
+                <span class = "country-code">SGD</span>
+            </span>
+            <span class = "country-currency">Dolar Singapurski</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/THB.html">
+            <span class="same-width">
+                <img src="../../../webappimages/THB-flag.jpg" alt = "THB"/>
+                <span class = "country-code">THB</span>
+            </span>
+            <span class = "country-currency">bat Tajlandski</span></a>
+        </li>
+        <li><a href = "currinfo/currencies/USD.html">
+            <span class="same-width">
+                <img src="../../../webappimages/USD-flag.jpg" alt = "USD"/>
+                <span class = "country-code">USD</span>
+            </span>
+            <span class = "country-currency">Dolar Amerykański</span></a>
+        </li>
+    </ul>
+    <ul>
+        <li><a href = "currinfo/currencies/ZAR.html">
+            <span class="same-width">
+                <img src="../../../webappimages/ZAR-flag.png" alt = "ZAR"/>
+                <span class = "country-code">ZAR</span>
+            </span>
+            <span class = "country-currency">Rand Afrykanski</span></a>
+        </li>
+    </ul>
+</div>
+<div class = "line-graph">
+    <div id = "chart-heading">AED</div>
+    <canvas id = "myChart"></canvas>
+    <div class = "chart-button-set">
+        <button id = "one-month" class = "chart-button default" type="button" onclick="addData(1)">
+            30 dni
+        </button>
+        <button id = "two-months" class = "chart-button" type="button" onclick="addData(2)">
+            60 dni
+        </button>
+        <button id = "three-months" class = "chart-button" type="button" onclick="addData(3)">
+            90 dni
+        </button>
+    </div>
+    <div></div>
+</div>
+<div class = "line-graph1">
+    <div id = "chart-heading1">PLN</div>
+    <canvas id = "myChart1"></canvas>
+    <div class = "chart-button-set">
+        <button id = "one-month1" class = "chart-button default" type="button" onclick="addData1(1)">
+            30 dni
+        </button>
+        <button id = "two-months1" class = "chart-button" type="button" onclick="addData1(2)">
+            60 dni
+        </button>
+        <button id = "three-months1" class = "chart-button" type="button" onclick="addData1(3)">
+            90 dni
+        </button>
+    </div>
+    <div></div>
+</div>
+<footer id="footer">
+    <div class = "left"><a href = "contactus/contact.html">Kontakt</a></div>
+    <div class = "right"><a href = "privacyandterm/privacyAndTerm.html">Prywatność i Warunki</a></div>
+    <p>Currex.pl © 2022 MBH Media, Inc</p>
+</footer>
+<script src="../../../javascript/main/nav/navigation.js"></script>
+<script src="../../../javascript/main/converter/converter.js"></script>
+<script src="../../../javascript/main/fastconverter/fastConverter.js"></script>
+<script src="../../../javascript/main/popularconversion/popularConversion.js"></script>
+<script src="../../../javascript/main/chart/lineGraph.js"></script>
+<script src="../../../javascript/main/chart/lineGraph1.js"></script>
+</body>
+</html>

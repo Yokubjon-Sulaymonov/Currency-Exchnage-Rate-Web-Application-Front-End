@@ -1,0 +1,39 @@
+.privacy-and-term {
+    margin: 0 220px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.privacy-and-term p a {
+    color: #000000;
+}
+
+.privacy-and-term p a:visited {
+    color: #000000;
+}
+
+.privacy-and-term p a:hover {
+    transition-timing-function: linear;
+    transition: all 1s;
+    color: #008000;
+}
+
+
+.nav div button {
+    vertical-align: middle;
+    font-size: large;
+    background-color: #00003B;
+    margin-top: -50px;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 59px;
+}
+
+.nav div button:hover {
+    border-bottom: 2px solid #ffffff;
+    height: 57px;
+    margin-top: -48px;
+}

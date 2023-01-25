@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CNY | Chinese Yuan Renminbi | Currex</title>
+  <link rel="icon" href="../../../webappimages/currex-logo-big.png" type="image/icon type">
+  <link rel = "stylesheet" href="../../../css/main/nav/navigation.css">
+  <link rel = "stylesheet" href="../../../css/currinfo/template/template1.css" />
+  <link rel = "stylesheet" href="../../../css/main/footer/footer.css">
+</head>
+<body>
+<div class = "nav">
+  <div>
+    <div class = "inline">
+      <a href="../../main.html"><img src="../../../webappimages/currex-logo-small.JPG" alt="logo"/></a>
+    </div>
+    <button class = "help inline" onclick="openHelpMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+           class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0
+                     .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965
+                     1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0
+                     .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056
+                     0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0
+                     .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584
+                     0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+      </svg>
+      Help
+    </button>
+    <button class = "language inline" onclick="openLanguageMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+           viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0
+                     5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0
+                     2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847
+                     5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51
+                     8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145
+                     12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696
+                     0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652
+                     13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745
+                     12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82
+                     1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65
+                     13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312
+                     2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0
+                     0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897
+                     9.17 1.282 8.5 1.077V4h2.355z"/>
+      </svg>
+      EN
+    </button>
+  </div>
+</div>
+<div id = "menu-for-help" class = "hidden-menu">
+  <div class = "support">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+         viewBox="0 0 16 16">
+      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0
+                4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0
+                1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+    </svg>
+    <span class = "underline">
+            <a href="#footer">Support</a>
+        </span>
+  </div>
+  <div class = "faq">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle"
+         viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686
+                0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0
+                .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056
+                0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0
+                1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+    </svg>
+    <span class = "underline">
+            <a href="../../faq/FAQ.html">FAQ</a>
+        </span>
+  </div>
+</div>
+<div id = "menu-for-language" class = "hidden-menu">
+  <div class = "support">
+    <img src="../../../webappimages/GBP-flag.png" alt="">
+    <span class = "underline">
+            <a href="#">English</a>
+        </span>
+  </div>
+  <div class = "support">
+    <img src="../../../webappimages/PLN-flag.png" alt="">
+    <span class = "underline">
+            <a href="../../pl/html/main.html">Polish</a>
+        </span>
+  </div>
+</div>
+<div class = "body">
+  <div class = "top-heading">Chinese Yuan Renminbi</div>
+  <div class = "middle-heading">
+    <img src="../../../webappimages/CNY-flag.jpg" class = "flag" alt="CNY" />
+    <h1>CNY</h1>
+  </div>
+  <div class = "extra-margin">
+    <h3>Description</h3>
+    <p class = "simple-font">
+      The Chinese yuan renminbi (simplified Chinese: 人民币), or CNY, which means ‘people's currency’, is the official
+      currency of the People's Republic of China. The term ‘renminbi’ refers to the name of the currency while ‘yuan’
+      refers to the basic unit of the Chinese currency. The symbol of the renminbi is ¥. As it is shared with the
+      Japanese yen (JPY), CN¥ is sometimes used to distinguish the Chinese yuan renminbi from the yen.
+    </p>
+    <p class = "simple-font">
+      The renminbi, introduced in 1948, is abbreviated as RMB but it is not an official currency code. Markets located
+      in Hong Kong that trade the Chinese currency at free-floating rates use another unofficial code - CNH. The RMB
+      acts as one of the most-held reserve currencies in the world, while being the eighth most-traded currency
+      globally.
+    </p>
+    <p class = "simple-font">
+      One yuan (Chinese: 元) is divided into ten jiao (Chinese: 角) and one jiao can be further divided into 10 fen
+      (Chinese: 分). The notes of China’s currency are issued by China's central bank, the People's Bank of China
+      (PBOC), in 10 denominations: ¥0.1, ¥0.2, ¥0.5, ¥1, ¥2, ¥5, ¥10, ¥20, ¥50 and ¥100. The renminbi coins come in 6
+      denominations: ¥0.01, ¥0.02, ¥0.05, ¥0.1, ¥0.5 and ¥1.
+    </p>
+    <h3>Economy</h3>
+    <ul class="simple-font">
+      <li>The People’s Republic of China has a market-oriented economy, with the service sector accounting for almost
+        52 percent of the total gross domestic product (GDP).</li>
+      <li>In 2020, China was the second largest national economy by nominal GDP, with the country’s GDP being
+        estimated at over US$14 trillion.</li>
+      <li>It is forecasted that the People’s Republic of China will become the largest economy by nominal GDP in the
+        world by 2028.</li>
+      <li>The People’s Republic of China is the largest manufacturer and exporter of goods, while ranking as the
+        second-largest importer of goods in the world.</li>
+      <li>Export products include textiles, steel, iron, medical equipment, data processing, electrical goods and
+        other machinery.</li>
+      <li>Import products are plastics, metal ores, organic chemicals, oil and mineral fuels and medical
+        equipment.</li>
+      <li>In 2020, China ranked as the world’s largest labour force with 778 million workers, having the unemployment
+        rate estimated at 4 percent.</li>
+      <li>Since the Chinese government began its economic reforms in 1978, China has been the fastest growing major
+        economy globally with growth rates averaging 10 percent over 30 years.</li>
+      <li>Four of the world's top 10 most competitive financial centres, Shanghai, Hong Kong, Beijing, and Shenzhen,
+        belong to the People’s Republic of China.</li>
+      <li>Three of the 10 largest stock exchanges in the world, Shanghai, Hong Kong, and Shenzhen, are located in
+        China.</li>
+      <li>In 2020, 129 of the largest companies in the Fortune Global 500 were headquartered in China.</li>
+      <li>The People’s Republic of China holds the world's largest foreign exchange reserves worth $3.1 trillion.</li>
+    </ul>
+    <h3>History</h3>
+    <ul class = "simple-font">
+      <li>In 1948, the first edition of the Chinese yuan renminbi was introduced by the People's Bank of China, with
+        the RMB issued in banknotes only.</li>
+      <li>In 1955, a revaluation happened, resulting in the introduction of the new yuan renminbi at the exchange
+        rate of 1 new yuan to 10,000 old yuan.</li>
+      <li>Since the 1950s, numerous series of the Chinese currency have been issued, having their own banknotes and
+        coins.</li>
+      <li>In 1978, the dual track currency system was implemented, with the Chinese yuan renminbi being used only
+        domestically. Therefore foreigners had to use exchange certificates, which led to a strong black market.</li>
+      <li>In the 1990s, the dual track currency system was abandoned.</li>
+      <li>From 1997 to 2005, the Chinese currency was pegged to the US dollar at the exchange rate of approximately
+        1 USD to 8.3 CNY.</li>
+      <li>Since 2006, the Chinese yuan renminbi has had a floating exchange rate.</li>
+    </ul>
+    <h3>Trivia</h3>
+    <ul class = "simple-font">
+      <li>The word ‘yuan’ means ‘round’.</li>
+      <li>The ‘redback’ is a nickname for the Chinese yuan renminbi, similarly to the slang term for the US
+        dollar - ‘greenback’.</li>
+      <li>China's central bank announced in 2019 that a digital renminbi, also called DCEP (Digital Currency
+        Electronic Payment) was going to be released soon. However, China’s digital currency won’t be based on
+        cryptocurrency</li>
+    </ul>
+  </div>
+  <div class = "bottom-heading">
+    <h2>Chinese yuan renminbi (CNY) profile</h2>
+    <ul>
+      <li class = "single-line">Symbols</li>
+      <li class = "single-line extra-width">¥, CN¥</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Nicknames</li>
+      <li class = "single-line extra-width">Redback</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">ISO 4217 code</li>
+      <li class = "single-line extra-width">CNY</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Central Bank</li>
+      <li class = "single-line extra-width">People's Bank of China</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Currency subunits</li>
+      <li class = "single-line extra-width">
+        Jiao = 1/10 of the yuan <br />
+        Fen = 1/100 of the yuan </li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Denominations</li>
+      <li class = "single-line extra-width">
+        Banknotes: ¥0.1, ¥0.2, ¥0.5, ¥1, ¥2, ¥5, ¥10, ¥20, ¥50, ¥100 <br />
+        Coins: ¥0.01, ¥0.02, ¥0.05, ¥0.1, ¥0.5, ¥1.</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Countries using this currency</li>
+      <li class = "single-line extra-width">People's Republic of China (Mainland China)</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Currencies pegged to CNY</li>
+      <li class = "single-line extra-width">None</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">CNY is pegged to</li>
+      <li class = "single-line extra-width">Basket of international currencies</li>
+    </ul>
+  </div>
+</div>
+<div class = "currency-converter-link-button">
+  <div class = "large-font currency-converter-link-button-header">
+    Open Currency Converter?
+  </div>
+  <div>
+    <button class = "link-to-convert" type = "button">
+      <a href="../../main.html"> Convert Now </a>
+    </button>
+  </div>
+</div>
+<footer id="footer">
+  <div class = "left"><a href = "../../contactus/contact.html">Contact us</a></div>
+  <div class = "right"><a href = "../../privacyandterm/privacyAndTerm.html">Privacy and Term</a></div>
+  <p>Currex.pl © 2022 MBH Media, Inc</p>
+</footer>
+<script src="../../../javascript/main/nav/navigation.js"></script>
+</body>
+</html>

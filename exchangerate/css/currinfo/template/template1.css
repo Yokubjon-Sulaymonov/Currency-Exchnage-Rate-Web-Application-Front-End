@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+}
+
+.body {
+    margin: 0 400px;
+}
+
+.top-heading {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 3em;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.middle-heading h1, img {
+    display: inline;
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.bottom-heading {
+    border: 1px solid #808080;
+    border-radius: 15px;
+    font-family: "", serif;
+    font-size: 18px;
+}
+
+.flag {
+    width: 50px;
+    height: 30px;
+}
+
+.simple-font {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+}
+
+.large-font {
+    font-family: "Times New Roman", serif;
+    font-size: 2em;
+}
+
+.single-line {
+    display: table-cell;
+    width: 250px;
+    vertical-align: middle;
+}
+
+.extra-width {
+    width: 400px;
+}
+
+.simple-horizontal-line {
+    margin: 0 38px;
+    color: #808080;
+}
+
+.currency-converter-link-button {
+    margin: 40px 0;
+    text-align: center;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 150px;
+}
+
+.currency-converter-link-button-header {
+    display: inline-block;
+    margin: 20px 0 30px;
+}
+
+button.link-to-convert {
+    border-radius: 30px;
+    border: none;
+    padding: 12px 10px;
+    font-size: 16px;
+    background-color: #000080;
+    color: #ffffff;
+}
+
+button.link-to-convert a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button.link-to-convert:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.nav div button {
+    margin-top: -50px;
+    vertical-align: middle;
+    font-size: large;
+    background-color: #00003B;
+    color: white;
+    width: 100px;
+    height: 59px;
+}
+
+.nav div button:hover {
+    border-bottom: 2px solid #ffffff;
+    height: 57px;
+    margin-top: -48px;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+div.extra-margin ul li {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-left: 38px;
+    margin-bottom: 40px;
+}

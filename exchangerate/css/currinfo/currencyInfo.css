@@ -1,0 +1,47 @@
+.currency-info {
+    margin: 150px;
+}
+
+.currency-info h2 {
+    margin-left: 40px;
+}
+
+.currency-info ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+.currency-info ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 18px;
+    width: 300px;
+    font-family: "Times New Roman", serif;
+}
+
+.currency-info ul li a img {
+    width: 20px;
+    height: 13px;
+    vertical-align: baseline;
+}
+
+.country-currency {
+    text-decoration: underline;
+    width: 300px;
+}
+
+.same-width {
+    display: inline-block;
+    width: 80px;
+}
+
+.country-code {
+    color: #000000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+div.currency-info ul li a:link, a:visited, a:hover, a:active {
+    color: blue;
+}

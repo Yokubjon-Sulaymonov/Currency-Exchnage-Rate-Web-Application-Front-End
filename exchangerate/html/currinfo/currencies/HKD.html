@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HKD | Hong Kong Dollar | Currex</title>
+    <link rel="icon" href="../../../webappimages/currex-logo-big.png" type="image/icon type">
+    <link rel = "stylesheet" href="../../../css/main/nav/navigation.css">
+    <link rel = "stylesheet" href="../../../css/currinfo/template/template1.css" />
+    <link rel = "stylesheet" href="../../../css/main/footer/footer.css">
+</head>
+<body>
+<div class = "nav">
+    <div>
+        <div class = "inline">
+            <a href="../../main.html"><img src="../../../webappimages/currex-logo-small.JPG" alt="logo"/></a>
+        </div>
+        <button class = "help inline" onclick="openHelpMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                 class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0
+                     .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965
+                     1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0
+                     .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056
+                     0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0
+                     .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584
+                     0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+            </svg>
+            Help
+        </button>
+        <button class = "language inline" onclick="openLanguageMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+                 viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0
+                     5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0
+                     2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847
+                     5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51
+                     8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145
+                     12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696
+                     0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652
+                     13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745
+                     12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82
+                     1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65
+                     13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312
+                     2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0
+                     0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897
+                     9.17 1.282 8.5 1.077V4h2.355z"/>
+            </svg>
+            EN
+        </button>
+    </div>
+</div>
+<div id = "menu-for-help" class = "hidden-menu">
+    <div class = "support">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+             viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0
+                4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0
+                1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+        </svg>
+        <span class = "underline">
+            <a href="#footer">Support</a>
+        </span>
+    </div>
+    <div class = "faq">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle"
+             viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686
+                0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0
+                .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056
+                0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0
+                1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+        </svg>
+        <span class = "underline">
+            <a href="../../faq/FAQ.html">FAQ</a>
+        </span>
+    </div>
+</div>
+<div id = "menu-for-language" class = "hidden-menu">
+    <div class = "support">
+        <img src="../../../webappimages/GBP-flag.png" alt="">
+        <span class = "underline">
+            <a href="#">English</a>
+        </span>
+    </div>
+    <div class = "support">
+        <img src="../../../webappimages/PLN-flag.png" alt="">
+        <span class = "underline">
+            <a href="../../pl/html/main.html">Polish</a>
+        </span>
+    </div>
+</div>
+<div class = "body">
+    <div class = "top-heading">Hong Kong Dollar Currency</div>
+    <div class = "middle-heading">
+        <img src="../../../webappimages/HKD-flag.png" class = "flag" alt="HKD" />
+        <h1>HKD</h1>
+    </div>
+    <div class = "extra-margin">
+        <h3>Description</h3>
+        <p class = "simple-font">
+            Introduced in 1863, the Hong Kong dollar (Chinese: 港元), or HKD, is the official currency of Hong Kong.
+            The symbol of the Hong Kong dollar is $, along with HK$, which is sometimes used to distinguish Hong Kong
+            dollars from other dollar-denominated currencies. Hong Kong dollars are also used in Macau, where the local
+            currency Macau patacan is pegged to HKD.
+        </p>
+        <p class="simple-font">
+            HKD banknotes are issued in six denominations: HK$10, HK$20, HK$50, HK$100, HK$500 and HK$1,000. The Hong
+            Kong dollar is divided into 100 cents and issued in seven denominations: 10c, 20c, 50c, HK$1, HK$2, HK$5
+            and HK$10.
+        </p>
+        <p class="simple-font">
+            The Hong Kong dollar, the ninth most traded currency globally, is not a floating currency. It is pegged to
+            the US dollar with a narrow trading band.
+        </p>
+        <h3>Economy</h3>
+        <ul class="simple-font">
+            <li>Hong Kong has a free market economy, with the service sector accounting for over 92 percent of the total
+                gross domestic product (GDP), having also low taxation and free port trade.</li>
+            <li>With the HKMA holding one of the largest currency reserves globally along with virtually no public debt,
+                a sound banking system, and a strong legal system together create the solid economy of Hong Kong.</li>
+            <li>In 2020, Hong Kong was the 38th largest national economy by nominal GDP, with the country’s GDP being
+                estimated at over US$355 billion.</li>
+            <li>Hong Kong is considered the most favourable place to start a company in the world, because of being
+                highly dependent on international trade and finance, with the number of registered start-ups sharply
+                rising from 998 in 2014 to over 2800 in 2018.</li>
+            <li>The Hong Kong Stock Exchange is the world’s fourth largest, with a market capitalisation of around US$6
+                trillion.</li>
+            <li>Hong Kong, one of the largest and most expensive cities globally, has a relatively high rate of
+                population living in poverty, amounting to almost 15 percent in 2017.</li>
+        </ul>
+        <h3>History</h3>
+        <ul class = "simple-font">
+            <li>In 1841, with no local currency, foreign currencies such as Indian rupees, Spanish and Mexican reales,
+                and Chinese coins were used in Hong Kong.</li>
+            <li>In 1863, the Royal Mint in London began issuing the first Hong Kong dollars.</li>
+            <li>In 1935, abandoning the silver standard, Hong Kong pegged its currency to the British pound
+                sterling</li>
+            <li>During the Japanese occupation, the Hong Kong dollar was replaced by the Japanese yen, becoming the
+                only legal tender.</li>
+            <li>In 1972, the Hong Kong dollar was pegged to the US dollar at the exchange rate of 1 USD = 5,65 HK$.</li>
+            <li>Since that time, the Hong Kong dollar has continued to be pegged to the US dollar, with the periodically
+                changing rate depending on the HKMA, which maintains the stability of HKD.</li>
+        </ul>
+        <h3>Trivia</h3>
+        <ul class = "simple-font">
+            <li>A nickname for the Hong Kong dollar is the ‘honkie’.</li>
+            <li>Three commercial banks, such as Hong Kong and Shanghai Banking Corporation Limited (HSBC), the Bank of
+                China (Hong Kong) Limited, and the Standard Chartered Bank (Hong Kong) Limited, are authorised to issue
+                banknotes, under the licence from the Hong Kong Monetary Authority (HKMA), Hong Kong’s central
+                bank.</li>
+        </ul>
+    </div>
+    <div class = "bottom-heading">
+        <h2>Hong Kong dollar (HKD) profile</h2>
+        <ul>
+            <li class = "single-line">Symbols</li>
+            <li class = "single-line extra-width">$, HK$</li>
+        </ul>
+        <hr class = "simple-horizontal-line"/>
+        <ul>
+            <li class = "single-line">Nicknames</li>
+            <li class = "single-line extra-width">Honkie</li>
+        </ul>
+        <hr class = "simple-horizontal-line"/>
+        <ul>
+            <li class = "single-line">ISO 4217 code</li>
+            <li class = "single-line extra-width">HKD</li>
+        </ul>
+        <hr class = "simple-horizontal-line"/>
+        <ul>
+            <li class = "single-line">Central Bank</li>
+            <li class = "single-line extra-width">Hong Kong Monetary Authority</li>
+        </ul>
+        <hr class = "simple-horizontal-line"/>
+        <ul>
+            <li class = "single-line">Currency subunits</li>
+            <li class = "single-line extra-width">Cent = 1/100</li>
+        </ul>
+        <hr class = "simple-horizontal-line"/>
+        <ul>
+            <li class = "single-line">Denominations</li>
+            <li class = "single-line extra-width">
+                Banknotes: $10, $20, $50, $100, $500, $1,000    <br />
+                Coins: 10¢, 20¢, 50¢, $1, $2, $5, $10</li>
+        </ul>
+        <hr class = "simple-horizontal-line"/>
+        <ul>
+            <li class = "single-line">Countries using this currency</li>
+            <li class = "single-line extra-width">Hong Kong</li>
+        </ul>
+        <hr class = "simple-horizontal-line"/>
+        <ul>
+            <li class = "single-line">Currencies pegged to HKD</li>
+            <li class = "single-line extra-width">Macau pataca</li>
+        </ul>
+        <hr class = "simple-horizontal-line"/>
+        <ul>
+            <li class = "single-line">HKD is pegged to</li>
+            <li class = "single-line extra-width">1 USD = 7.75 HKD–7.85 HKD</li>
+        </ul>
+    </div>
+</div>
+<div class = "currency-converter-link-button">
+    <div class = "large-font currency-converter-link-button-header">
+        Open Currency Converter?
+    </div>
+    <div>
+        <button class = "link-to-convert" type = "button">
+            <a href="../../main.html"> Convert Now </a>
+        </button>
+    </div>
+</div>
+<footer id="footer">
+    <div class = "left"><a href = "../../contactus/contact.html">Contact us</a></div>
+    <div class = "right"><a href = "../../privacyandterm/privacyAndTerm.html">Privacy and Term</a></div>
+    <p>Currex.pl © 2022 MBH Media, Inc</p>
+</footer>
+<script src="../../../javascript/main/nav/navigation.js"></script>
+</body>
+</html>

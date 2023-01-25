@@ -1,0 +1,44 @@
+.fast-exchange {
+    border: 1px solid #DEDEDE;
+    border-radius: 15px;
+    margin: 40px 10px 10px 150px;
+    width: 400px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.less-left-margin {
+    margin-left: 10px;
+}
+
+.fast-exchange h2 {
+    margin-left: 40px;
+}
+
+.fast-exchange hr {
+    border-top: 1px solid #DEDEDE;
+}
+
+.fast-exchange ul li {
+    display: inline-block;
+    margin-right: 50px;
+    width: 120px;
+}
+
+.fast-exchange img {
+    width: 20px;
+    height: 13px;
+    margin-right: 5px;
+}
+
+.fast-exchange ul a span {
+    text-decoration: underline;
+}
+
+.fast-exchange ul a {
+    text-decoration: none;
+}
+
+.fast-exchange ul a:link, a:visited, a:hover, a:active {
+    color: blue;
+}

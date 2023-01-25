@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AUD | Australian Dollar | Currex</title>
+  <link rel="icon" href="../../../webappimages/currex-logo-big.png" type="image/icon type">
+  <link rel = "stylesheet" href="../../../css/main/nav/navigation.css">
+  <link rel = "stylesheet" href="../../../css/currinfo/template/template1.css" />
+  <link rel = "stylesheet" href="../../../css/main/footer/footer.css">
+</head>
+<body>
+<div class = "nav">
+  <div>
+    <div class = "inline">
+      <a href="../../main.html"><img src="../../../webappimages/currex-logo-small.JPG" alt="logo"/></a>
+    </div>
+    <button class = "help inline" onclick="openHelpMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+           class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0
+                     .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965
+                     1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0
+                     .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056
+                     0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0
+                     .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584
+                     0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+      </svg>
+      Help
+    </button>
+    <button class = "language inline" onclick="openLanguageMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+           viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0
+                     5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0
+                     2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847
+                     5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51
+                     8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145
+                     12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696
+                     0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652
+                     13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745
+                     12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82
+                     1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65
+                     13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312
+                     2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0
+                     0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897
+                     9.17 1.282 8.5 1.077V4h2.355z"/>
+      </svg>
+      EN
+    </button>
+  </div>
+</div>
+<div id = "menu-for-help" class = "hidden-menu">
+  <div class = "support">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+         viewBox="0 0 16 16">
+      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0
+                4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0
+                1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+    </svg>
+    <span class = "underline">
+            <a href="#footer">Support</a>
+        </span>
+  </div>
+  <div class = "faq">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle"
+         viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686
+                0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0
+                .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056
+                0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0
+                1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+    </svg>
+    <span class = "underline">
+            <a href="../../faq/FAQ.html">FAQ</a>
+        </span>
+  </div>
+</div>
+<div id = "menu-for-language" class = "hidden-menu">
+  <div class = "support">
+    <img src="../../../webappimages/GBP-flag.png" alt="">
+    <span class = "underline">
+            <a href="#">English</a>
+        </span>
+  </div>
+  <div class = "support">
+    <img src="../../../webappimages/PLN-flag.png" alt="">
+    <span class = "underline">
+            <a href="../../pl/html/main.html">Polish</a>
+        </span>
+  </div>
+</div>
+<div class = "body">
+  <div class = "top-heading">Australian Dollar Currency</div>
+  <div class = "middle-heading">
+    <img src="../../../webappimages/AUD-flag.webp" class = "flag" alt="AUD" />
+    <h1>AUD</h1>
+  </div>
+  <div class = "extra-margin">
+    <h3>Description</h3>
+    <p class = "simple-font">
+      Established in 1966, the Australian dollar (AUD) is the official currency of Australia and several countries
+      and territories, including Christmas Island, Cocos Islands, Norfolk Island, Nauru, Tuvalu, and Kiribati.
+      The Australian dollar symbol is $, however, symbols such as A$ or AU$ are also used to distinguish the
+      Australian dollar from other dollar-denominated currencies. The Australian dollar, also known as the ‘buck’,
+      ‘dough’ and ‘aussie’, ranks as the fifth most traded currency in the world.
+    </p>
+    <p class = "simple-font">
+      Australia's central bank, the Reserve Bank of Australia (RBA), is mainly responsible for monetary policy and
+      producing the country’s money supply. It issues AUD notes in five denominations: $5, $10, $20, $50 and $100.
+      The Australian dollar is divided into 100 cents, and its coins are issued in six denominations: 5c, 10c, 20c,
+      50c, $1 and $2.
+    </p>
+    <h3>Economy</h3>
+    <ul class="simple-font">
+      <li>Australia has a mixed economy, which relies on the service industry contributing to almost 63 percent of the
+        total gross domestic product (GDP).</li>
+      <li>In 2020, Australia ranked as the 13th largest national economy by nominal GDP, with the country’s GDP
+        being estimated at almost USD1.4 trillion.</li>
+      <li>With Australia’s natural resources valued at USD19.9 trillion in 2019, Australia is the 10th richest country
+        in the world in terms of natural resources. These resources include metals, coal, diamonds, meat and wool,
+        which account for the main products of the country’s export.</li>
+      <li>The country is also known for having the largest gold reserves globally, supplying over 14 percent of the
+        world's gold demand and 46 percent of the world's uranium demand.</li>
+      <li>Australia imports products such as computers, machines, telecommunication parts, equipment, petroleum
+        products and crude oil.</li>
+      <li>The popularity of AUD among traders is due to numerous factors related to geology, geography, and government
+        policy.</li>
+      <li>The AUD/USD currency pair is one of the most frequently traded pairs globally.</li>
+      <li>AUD exchange rates are tied to demand for Australia’s natural resources from Asian countries, especially
+        China and India. Therefore, the Australian dollar is also known as a commodity currency</li>
+      <li>In 2020, the Reserve Bank of Australia increased the cash in circulation from A$83 billion to A$94 billion
+        due to increased demand for notes.</li>
+      <li>The Australian Securities Exchange in Sydney is the 16th largest stock exchange globally, in terms of
+        domestic market capitalisation.</li>
+    </ul>
+    <h3>History</h3>
+    <ul class = "simple-font">
+      <li>In 1966, the Australian dollar replaced the Australian pound, with the exchange rate of A£1 = A$2. The first
+        coins introduced included 1 cent, 2 cents, 5 cents, 10 cents, 20 cents, and 50 cents.</li>
+      <li>In 1967, Australia abandoned the sterling standard and pegged the Australian dollar to the US dollar at the
+        rate of 1 AUD = 1,12 USD.</li>
+      <li>AUD was the legal tender of Papua New Guinea until 1975 and the Solomon Islands until 1977.</li>
+      <li>In 1983, AUD became a free-floating currency.</li>
+      <li>In 1988, Australia issued the first notes made of polymer, to prevent counterfeiting, becoming the first
+        country in the world to ever do it.</li>
+      <li>In 2006, the 1 cent and 2-cent coins were discontinued and taken out of circulation.</li>
+      <li>Australia has made special edition coins and notes to celebrate events such as the wedding of Charles,
+        Prince of Wales, and Lady Diana Spencer in 1981 and the Brisbane Commonwealth Games of 1982.</li>
+    </ul>
+    <h3>Trivia</h3>
+    <ul class="simple-font">
+      <li>All Australian coins portray Queen Elizabeth II on the obverse, with different images on the reverse of each
+        coin.</li>
+      <li>The initial 50-cent coins contained 80 percent silver but were withdrawn after a year because the value of
+        the silver content significantly exceeded the coin’s face value.</li>
+      <li>The Royal Australian Mint has produced more than 14 billion circulating coins since its opening in 1965.
+        The mint is also able to produce more than 600 million coins per year.</li>
+      <li>Note Printing Australia Limited (NPA) is a wholly owned subsidiary of the Reserve Bank of Australia and has
+        produced polymer banknotes for many other countries including New Zealand, Papua New Guinea, Singapore, Chile,
+        Malaysia, Vietnam, Romania, Northern Ireland, Taiwan, Mexico, Thailand and Brazil.</li>
+    </ul>
+  </div>
+  <div class = "bottom-heading">
+    <h2>Australian Dollar (AUD) Profile</h2>
+    <ul>
+      <li class = "single-line">Symbols</li>
+      <li class = "single-line extra-width">$, A$, AU$</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Nicknames</li>
+      <li class = "single-line extra-width">Buck, dough, aussie</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">ISO 4217 code</li>
+      <li class = "single-line extra-width">AUD</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Central Bank</li>
+      <li class = "single-line extra-width">Reserve Bank of Australia</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Currency subunits</li>
+      <li class = "single-line extra-width">Cent = 1/100</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Denominations</li>
+      <li class = "single-line extra-width">
+        Banknotes: $5, $10, $20, $50, $100 <br />
+        Coins: 5c, 10c, 20c, 50c, $1, $2</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Countries using this currency</li>
+      <li class = "single-line extra-width">
+        Australia                                                <br/>
+        Ashmore and Cartier Islands (Australian Territory)       <br />
+        Australian Antarctic Territory (Australian Territory)    <br />
+        Christmas Island (Australian Territory)                  <br />
+        Cocos (Keeling) Islands (Australian Territory)           <br />
+        Coral Sea Islands (Australian Territory)                 <br />
+        Heard Island and McDonald Islands (Australian Territory) <br />
+        Norfolk Island (Australian Territory)                    <br />
+        Kiribati                                                 <br />
+        Nauru                                                    <br />
+        Tuvalu</li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">Currencies pegged to AUD</li>
+      <li class = "single-line extra-width">
+        Tuvaluan Dollar <br />
+        Kiribati Dollar </li>
+    </ul>
+    <hr class = "simple-horizontal-line"/>
+    <ul>
+      <li class = "single-line">AUD is pegged to</li>
+      <li class = "single-line extra-width">None</li>
+    </ul>
+  </div>
+</div>
+<div class = "currency-converter-link-button">
+  <div class = "large-font currency-converter-link-button-header">
+    Open Currency Converter?
+  </div>
+  <div>
+    <button class = "link-to-convert" type = "button">
+      <a href="../../main.html"> Convert Now </a>
+    </button>
+  </div>
+</div>
+<footer id="footer">
+  <div class = "left"><a href = "../../contactus/contact.html">Contact us</a></div>
+  <div class = "right"><a href = "../../privacyandterm/privacyAndTerm.html">Privacy and Term</a></div>
+  <p>Currex.pl © 2022 MBH Media, Inc</p>
+</footer>
+<script src="../../../javascript/main/nav/navigation.js"></script>
+</body>
+</html>

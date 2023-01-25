@@ -1,0 +1,28 @@
+.short-info {
+    border: 1px solid #DEDEDE;
+    border-radius: 15px;
+    margin: 10px 10px 20px 150px;
+    width: 400px;
+    height: 400px;
+    font-size: 17px;
+    display: inline-block;
+    background-color: #FAFAFA;
+}
+
+.short-info h2 {
+    margin-left: 40px;
+}
+
+.less-left-margin {
+    margin-left: 10px;
+}
+
+.short-info p {
+    margin: 0 40px 20px 40px;
+    font-size: large;
+    font-family: "Times New Roman", serif;
+}
+
+.short-info p a:link, a:visited, a:hover, a:active {
+    color: blue;
+}

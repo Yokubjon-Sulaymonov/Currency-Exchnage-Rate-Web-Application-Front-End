@@ -1,0 +1,46 @@
+#chart-heading, #chart-heading1 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.line-graph {
+    position: absolute;
+    width: 330px;
+    height: 315px;
+    margin-top: -2180px;
+    margin-left: 1020px;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+}
+
+.line-graph1 {
+    position: absolute;
+    width: 330px;
+    height: 315px;
+    margin-top: -1820px;
+    margin-left: 1020px;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+}
+
+.chart-button-set {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.chart-button {
+    display: inline-block;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    background-color: #ffffff;
+}
+
+.default {
+    background-color: #EDEDED;
+}
+
+.chart-button:hover {
+    background-color: #EDEDED
+}

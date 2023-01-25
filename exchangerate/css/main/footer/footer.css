@@ -1,0 +1,50 @@
+footer {
+    background-color: #00003B;
+    height: 100px;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+footer div {
+    margin-top: 15px;
+    display: inline-block;
+    font-size: large;
+}
+
+footer div.left {
+    margin-left: 140px;
+    padding-right: 20px;
+    border-right: 1px solid #ffffff;
+}
+
+footer div.right {
+    padding-left: 20px;
+}
+
+footer div.left a {
+    text-decoration: none;
+    color: white;
+}
+
+footer div.left a:hover {
+    transition-timing-function: linear;
+    transition: all 1s;
+    color: lightgreen;
+}
+
+footer div.right a:hover {
+    transition-timing-function: linear;
+    transition: all 1s;
+    color: lightgreen;
+}
+
+footer div.right a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    margin-top: 10px;
+    margin-left: 140px;
+    font-size: small;
+}
